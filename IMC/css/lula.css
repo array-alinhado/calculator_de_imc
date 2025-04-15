@@ -8,24 +8,12 @@ body{
     flex-direction: column;
     overflow: hidden;
 }
-h1 {
+h1{
     text-align: center;
+    color: #fff;
     font-size: 50px;
     font-family: 'Fonte';
-    background: linear-gradient(90deg, red, yellow, green);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: bg 5s linear infinite;
-}
 
-@keyframes bg{
-    0%{
-        filter: hue-rotate(0deg);
-    }
-    100%{
-        filter: hue-rotate(360deg);
-    }
 }
 
 input{
@@ -39,7 +27,11 @@ input{
     display: flex;
     flex-direction: column;
     font-family: 'Fonte';
+    transition: transform 0.3s ease;
+        color: 0.3s ease;
 }
+
+
 p{
     font-size: 30px;
     font-family: 'Fonte';
@@ -84,3 +76,43 @@ button:hover{
 }
 
 
+.input-box {
+    position: relative;
+    margin: 20px 0;
+    width: 400px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    font-family: 'Fonte';
+    color: #000;
+}
+
+.input-box label {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    background-color: rgba(225, 225, 225, 0.616); /* mesma cor do .castelo */
+    padding: 0 5px;
+    color: #555;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    font-family: 'Fonte';
+    border-radius: 20px;
+}
+
+input:focus+label {
+    transform: translateY(-30px);
+    color: blue;
+}
+input:focus {
+    border-color: blue;
+}
