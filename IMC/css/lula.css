@@ -73,7 +73,7 @@ button:hover{
     width: 400px;
     height: 30px;
     border-radius: 6px;
-    border: 2px solid yellow;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 
