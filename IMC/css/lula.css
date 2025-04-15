@@ -58,8 +58,9 @@ button:hover{
 }
 
 .castelo{
-    padding: 20px;
-    height: 500px;
+    padding: 70px;
+    height: 400px;
+    width: 600px;
     background-color: rgba(225, 225, 225, 0.616);
     border-radius: 10px;
     display: flex;
